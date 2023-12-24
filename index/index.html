@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="background">
+        <div class="navbar">
+            <div class="logo" style="margin-right: 93px; margin-left: 18px;"></div>
+            <div class="links">
+                <a href="index.html">Главная</a>
+                <a href="../uslugi/uslugi.html">Услуги</a>
+                <a href="../company/company.html">Компания</a>
+                <a href="../contacts/contacts.html">Контакты</a>
+            </div>
+            <div class="location">
+                <picture><img src="../top/topnbottomimg/location1.svg"></picture>
+                <div class="curretlocation">Москва</div>
+                <picture><img src="mainpage/arrow.svg"></picture>
+            </div>
+            <div class="login">Войти</div>
+        </div>
+        <div class="top">
+            
+            <div class="map none"></div>
+            
+            <div class="offer">
+                <picture><img src="mainpage/truck.svg""></picture>
+                <div class="offerhead">Быстрая и качественная доставка груза?<br>Тогда это к нам!</div>
+                <div class="offerdown">Выполняем доставку грузов по всей территории России<br>с максимальной эффективностью и аккуратностью.</div>
+            </div>
+            <div id="input">
+                <div class="leftblock">
+                    <div class="leftblockhead">Управлять грузом</div>
+                    <input class="leftblockinput"  placeholder="Номер груза" type="text">
+                    <div class="leftblockbutton">Найти</div>
+                </div>
+                <div class="rightblock">
+                    <div class="rightblockhead">Отправить груз</div>
+                    <div class="cost">
+                        <div class="weightandkm">
+                            <input class="rightblockinput" id="input-number1" type="text" placeholder="Расстояние в км">
+                            <input class="rightblockinput" id="input-number2" type="text" placeholder="Объём">
+                        </div>
+                        <div class="approxcost">
+                            <div>Примерная стоимость</div>
+                            <div id="result" style="font-size: 32px; color: #3266EC; font-weight: 500;">0</div>
+                            <div>рублей</div>
+                        </div>
+                    </div>
+                    <script>
+                        const input1 = document.getElementById('input-number1');
+                        const input2 = document.getElementById('input-number2');
+                        const result = document.getElementById('result');
+
+                        function calculate() {
+                        const value1 = input1.value;
+                        const value2 = input2.value;
+                        if (value1 && value2) {
+                            if(Number(value1) && Number(value2)) {
+                            result.textContent = (Number(value1) + Number(value2)) * 50;
+                            } else {
+                                result.textContent = "?"
+                            }
+                        } else {
+                            result.textContent = 0;
+                        }
+                        }
+
+                        input1.addEventListener('input', calculate);
+                        input2.addEventListener('input', calculate);
+
+                        </script>
+                    <div class="rightblockbutton">Рассчитать и заказать</div>
+                </div>
+            </div>
+            <picture ><img class="vector" src="mainpage/vector.svg"></picture>
+        </div>
+        <div class="why">
+            <div class="whyheader none"><div class="weight600">Почему Вы должны выбрать именно нас?</div><br>Наша работа строится по принципу «AБС»</div>
+            <div class="cardsofwhy none">
+                <div class="card">
+                    <picture class="cautionicon" ><img src="mainpage/cautionicon.svg"></picture>
+                    <div class="weight600 letterspacing" style="font-size: 20px" >Аккуратность</div>
+                    <div class="cautionline"></div>
+                    <div class="cautiontext" style="font-size: 20px">Мы даём гарантию доставки Вашего груза в целости и сохранности, а так же готовы возместить ущерб в полном объёме при повреждении груза.</div>
+                </div>
+                <div class="card">
+                    <picture class="securityicon"><img src="mainpage/protection.svg"></picture>
+                    <div class="weight600 letterspacing mar8" style="font-size: 20px;">Безопасность</div>
+                    <div class="securityline"></div>
+                    <div class="securitytext" style="font-size: 20px">Абсолютная безопасность груза гарантируется четкой системой контроля и высоким уровнем ответственности каждого нашего сотрудника.</div>
+                </div>
+                <div class="card">
+                    <picture class="speedicon"><img src="mainpage/fast.svg"></picture>
+                    <div class="weight600 letterspacing mar8" style="font-size: 20px;">Скорость</div>
+                    <div class="speedline"></div>
+                    <div class="speedtext" style="font-size: 20px">Наши продвинутые навыки в логистике позволяют доставить ваш груз в назначенные сроки. Если мы опоздаем, то мы сделаем Вам скидку на доставку.</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="weare">
+                <div class="weareblock1 none">
+                    <div class="block">
+                        <div class="text1">Мы не просто транспортная компания<br>Мы - Ваш надежный партнер в том, что для вас так важно</div>
+                    </div>
+                </div>
+                <div class="weareblock2 none">
+                    <div class="block"><div class="text2">Переезд?<br>Развозка товаров по точкам?<br>Доставка?</div></div>
+                </div>
+                <div class="weareblock3 none">
+                    <div class="block"><div class="text3">Не важно что это будет. Мы окажем свои услуги в лучшем виде при любых задачах</div></div>
+                </div>
+        </div>
+        <div class="reviewsblock">
+            <div class="reviewsheader none">Наши клиенты могут сказать многое о нас</div>
+            <div class="review none">
+                <picture class="portrait"><img src="mainpage/Ellipse.svg"></picture>
+                <div class="message">
+                    <div class="messagetext">Пуаро отметил, что полковник проводил ее до купе. Экспресс въехал в живописные Таврские горы. Когда в окне показались Киликийские ворота, Пуаро – он стоял неподалеку от англичан – услышал, как девушка со вздохом прошептала...</div>
+                    <div class="messageline"></div>
+                    <div class="messageauthor">Эркюль Пуаро<br>ИП</div>
+                </div>
+            </div>
+            <div class="review none">
+                <picture class="portrait"><img src="mainpage/Ellipse.svg"></picture>
+                <div class="message">
+                    <div class="messagetext">Пуаро отметил, что полковник проводил ее до купе. Экспресс въехал в живописные Таврские горы. Когда в окне показались Киликийские ворота, Пуаро – он стоял неподалеку от англичан – услышал, как девушка со вздохом прошептала...</div>
+                    <div class="messageline"></div>
+                    <div class="messageauthor">Эркюль Пуаро<br>ИП</div>
+                </div>
+            </div>
+            <div class="review none">
+                <picture class="portrait"><img src="mainpage/Ellipse.svg"></picture>
+                <div class="message">
+                    <div class="messagetext">Пуаро отметил, что полковник проводил ее до купе. Экспресс въехал в живописные Таврские горы. Когда в окне показались Киликийские ворота, Пуаро – он стоял неподалеку от англичан – услышал, как девушка со вздохом прошептала...</div>
+                    <div class="messageline"></div>
+                    <div class="messageauthor">Эркюль Пуаро<br>ИП</div>
+                </div>
+            </div>
+        </div>
+        <div class="leavephone none">
+            <div style="font-size: 24px; font-weight: 600; text-align: center; margin-top: 37.99px;">Остались вопросы?</div>
+            <div style="font-size: 24px; text-align: center; margin-top: 4px;">Закажите звонок и мы обсудим все интересующие вас детали</div>
+            <input type="text" class="inputnumber" style="margin-top: 5px;">
+            <div class="orderbutton" style="margin-top: 5px;">Заказать звонок</div>
+        </div>
+        <script src="animation.js"></script>
+        <div class="basement">
+            <div class="basementtop">
+                <div class="logo"></div>
+                <div class="basementlinks weight600">
+                    <div class="fisrt">
+                        <div class="margin17px">Грузоперевозки</div>
+                        <div class="lineargradient">Тарифы</div>
+                        <div class="lineargradient">Наш автопарк</div>
+                        <div class="lineargradient">Грузоперевозки рефрижератором</div>
+                    </div>
+                    <div class="second">
+                        <div class="margin17px">Доп.услуги</div>
+                        <div class="lineargradient">Страхование грузов</div>
+                        <div class="lineargradient">Услуги грузчиков</div>
+                        <div class="lineargradient">Сборный груз</div>
+                    </div>
+                    <div class="third">
+                        <div class="margin17px">Поддержка</div>
+                        <div class="lineargradient">Telegram</div>
+                        <div class="lineargradient">Вконтакте</div>
+                        <div class="lineargradient">WhatsApp</div>
+                    </div>
+                </div>
+            </div>
+            <div class="allrights">
+                <div>© Все права защищены</div>
+                <div>ООО «Блинодел» 2022</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
