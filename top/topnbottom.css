@@ -126,6 +126,10 @@ a:hover{
     cursor: pointer;
 }
 
+.lineargradient:hover{
+    cursor: pointer;
+}
+
 .allrights{
     width: 1170px;
     height: 18px;
