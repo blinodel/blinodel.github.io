@@ -1,0 +1,139 @@
+.top{
+    width: 1548px;
+    height: 866px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.logo{
+    background-image: url(topnbottomimg/BLINS.svg);
+    width: 150px;
+    height: 25px;
+    background-repeat: no-repeat;
+
+}
+
+
+.navbar{
+    display: inline-flex;
+    width: 1203.295px;
+    height: 97px; 
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.links{
+    display: inline-flex;
+    font-size: 16px; 
+    color: white;
+    font-weight: 600;
+}
+
+
+a{
+    margin-right: 40px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+a:hover{
+    transform: scale(1.1);
+}
+
+.location{
+    width: 114.455px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    margin-left:64.82px;
+}
+
+.location:hover{
+    cursor: pointer;
+}
+
+.curretlocation{
+    margin: 8.1px;
+}
+
+.login{
+    width: 159.021px;
+    height: 44px;
+    border-radius: 38px;
+    flex-shrink: 0; 
+    background: linear-gradient(92deg, #FFD747 23.12%, #FFE68E 85.21%);
+    margin-left: 133.55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease;
+}
+
+.login:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 16.5px 7px #CACC72; 
+}
+
+.basement{
+    margin-top: 32px;
+    width: 100%;
+    height: 441px;
+    flex-shrink: 0;
+    background-color: #080808;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.basementtop{
+    width: 1171px;
+    height: 134px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.basementlinks{
+    width: 833px;
+    height: 124px;
+    flex-shrink: 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lineargradient{
+    background: linear-gradient(91deg, #3266EC 0%, #759CFF 96.35%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    margin-bottom: 17px;
+}
+
+.allrights{
+    width: 1170px;
+    height: 18px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    margin-top: 182px;
+}
+
+.margin17px{
+    margin-bottom: 17px;
+}

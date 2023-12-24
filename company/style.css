@@ -1,0 +1,217 @@
+@import url(../top/topnbottom.css);
+
+.companypage{
+    margin: auto;
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto; 
+    height: 100%;
+    background-image: url(companyimg/compantpage.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #080808;
+}
+
+.headercompany{
+    width: 1170px;
+    height: 82px;
+    flex-shrink: 0; 
+    border-radius: 71px;
+    background: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.companyinfo{
+    width: 1171px;
+    height: 602px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.leftblock{
+    width: 770px;
+    height: 602px;
+    flex-shrink: 0;
+    border-radius: 71px;
+    background: #FAFAFA;
+    font-weight: 400; 
+    font-size: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    width: 570px;
+    height: 553px;
+}
+
+.rightblock{
+    width: 371px;
+    height: 602px;
+    flex-shrink: 0;
+    border-radius: 71px;
+    background: #FAFAFA; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners{
+    width: 251px;
+    height: 547px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.moreofourpart{
+    border-radius: 38px;
+    background: linear-gradient(92deg, #FFD747 23.12%, #FFE68E 85.21%);
+    width: 251px;
+    height: 38.351px;
+    flex-shrink: 0;
+    font-size: 16px; 
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.achievementhead{
+    width: 1170px;
+    height: 82px;
+    flex-shrink: 0; 
+    border-radius: 71px;
+    background: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.achievementblock{
+    border-radius: 71px;
+    background: #FAFAFA;
+    width: 1171px;
+    height: 261px;
+    flex-shrink: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.achievement{
+    width: 1069.159px;
+    height: 201.136px;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.cardsoftrucks{
+    width: 1170px;
+    height: 1044px;
+    flex-shrink: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.truckscania{
+    width: 370px;
+    height: 507px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: end;
+}
+
+.cardback{
+    border-radius: 71px;
+    background: #FAFAFA;
+    width: 370px;
+    height: 374px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardinfo{
+    width: 280px;
+    height: 103px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.w1170{
+    width: 1170px;
+}
+.moreaboutmodel{
+    border-radius: 38px;
+    background: linear-gradient(92deg, #FFD747 23.12%, #FFE68E 85.21%);
+    width: 228.391px;
+    height: 47.494px; 
+    flex-shrink: 0;
+    font-size: 16px; 
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.moremodels{
+    width: 370px;
+    height: 84px;
+    flex-shrink: 0; 
+    border-radius: 71px;
+    background: #FAFAFA;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modelsbutton{
+    border-radius: 38px;
+    background: linear-gradient(92deg, #FFD747 23.12%, #FFE68E 85.21%);
+    width: 228.391px;
+    height: 47.494px; 
+    flex-shrink: 0;
+    font-size: 16px; 
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
