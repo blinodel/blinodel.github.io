@@ -520,7 +520,8 @@
         flex-shrink: 0;
         border-radius: 21px;
         border: 1px solid #0E8BFF;
-        background: #FAFAFA;  
+        background: #FAFAFA;
+        text-indent: 20px;
     }
 
     .orderbutton{
