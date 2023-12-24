@@ -123,6 +123,7 @@ a:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     margin-bottom: 17px;
+    cursor: pointer;
 }
 
 .allrights{
